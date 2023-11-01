@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/agentc-xyz/optimus-uniswap-x/compare/v0.2.1...v0.2.2) (2023-11-01)
+
+
+### Bug Fixes
+
+* bump substreams ([02d7f02](https://github.com/agentc-xyz/optimus-uniswap-x/commit/02d7f02f976d2e53dc7e14f6805ae647ccbe7476))
+
 ## [0.2.1](https://github.com/agentc-xyz/optimus-uniswap-x/compare/v0.2.0...v0.2.1) (2023-11-01)
 
 
