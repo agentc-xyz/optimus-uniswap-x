@@ -1,0 +1,6 @@
+target/
+devel/
+.git/
+.gitignore
+Dockerfile
+.dockerignore
