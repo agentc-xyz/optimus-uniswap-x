@@ -1,6 +1,6 @@
 FROM rust:1 as build
 
-ENV SUBSTREAMS_VERSION=v1.1.14
+ENV SUBSTREAMS_VERSION=v1.1.15
 
 # install wasm32 toolchain
 RUN rustup target add wasm32-unknown-unknown
