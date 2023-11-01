@@ -17,6 +17,7 @@ RUN --mount=type=bind,source=src,target=src \
     --mount=type=bind,source=abi,target=abi \
     --mount=type=bind,source=Cargo.toml,target=Cargo.toml \
     --mount=type=bind,source=Cargo.lock,target=Cargo.lock \
+    --mount=type=bind,source=schema.sql,target=schema.sql \
     --mount=type=bind,source=substreams.yaml,target=substreams.yaml \
     --mount=type=bind,source=Makefile,target=Makefile \
     --mount=type=cache,target=/app/target/ \
@@ -47,9 +48,10 @@ RUN arch=$(arch | sed s/aarch64/arm64/ | sed s/amd64/x86_64/) && \
 
 WORKDIR /app
 
-COPY --from=build /pack/substreams.spkg ./substreams.spkg
+ENV SUBSTREAMS_PACKAGE_FILE=substreams.spkg
 
-COPY ./Makefile ./schema.sql ./
+COPY --from=build /pack/substreams.spkg ./substreams.spkg
+COPY ./Makefile ./Makefile
 
 # setup + sink
 ENTRYPOINT ["make"]
