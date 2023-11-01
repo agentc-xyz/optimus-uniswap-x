@@ -33,7 +33,7 @@ setup:
 	substreams-sink-sql setup "${DATABASE_URL}" ${SUBSTREAMS_PACKAGE_FILE}
 
 sink:
-	substreams-sink-sql run "${DATABASE_URL}" "${SUBSTREAMS_PACKAGE_FILE}"
+	substreams-sink-sql run "${DATABASE_URL}" "${SUBSTREAMS_PACKAGE_FILE}" --on-module-hash-mistmatch warn
 
 execute:
 	until make setup; do sleep 1; done && make sink
