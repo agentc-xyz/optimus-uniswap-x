@@ -37,6 +37,6 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
           tags: | 
-              us-central1-docker.pkg.dev/graphplots/substreams-module/price-sink:latest
-              us-central1-docker.pkg.dev/graphplots/substreams-module/price-sink:${{ steps.get-tag.outputs.short_ref }}
+              us-central1-docker.pkg.dev/graphplots/substreams-module/uniswap-x:latest
+              us-central1-docker.pkg.dev/graphplots/substreams-module/uniswap-x:${{ steps.get-tag.outputs.short_ref }}
 
