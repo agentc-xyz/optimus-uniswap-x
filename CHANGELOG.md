@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.1](https://github.com/agentc-xyz/optimus-uniswap-x/compare/v0.2.0...v0.2.1) (2023-11-01)
+
+
+### Bug Fixes
+
+* add schema in the build ([1e594da](https://github.com/agentc-xyz/optimus-uniswap-x/commit/1e594dabd68a2e438e2151fbbb7a9aa8b3d16939))
+* warn on module mismatch ([162c2a4](https://github.com/agentc-xyz/optimus-uniswap-x/commit/162c2a47c35ddc6c71b3cb50a94f7bd9e249fad5))
+
 ## [0.2.0](https://github.com/agentc-xyz/optimus-uniswap-x/compare/v0.1.0...v0.2.0) (2023-11-01)
 
 
