@@ -36,7 +36,7 @@ Access your data using DBeaver connection via their Clickhouse driver:
 
 ### Pre requisites
 
-- [Rust v1.69+](https://rustup.rs/)
+- [Rust v1.71+](https://rustup.rs/)
 - [substreams](https://github.com/streamingfast/substreams/releases)
 - [substreams-sink-sql](https://github.com/streamingfast/substreams-sink-sql/releases)
 
