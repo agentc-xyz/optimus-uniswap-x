@@ -38,7 +38,7 @@ Access your data using DBeaver connection via their Clickhouse driver:
 
 - [Rust v1.69+](https://rustup.rs/)
 - [substreams](https://github.com/streamingfast/substreams/releases)
-- [substreams-postgres-sql](https://github.com/streamingfast/substreams-sink-sql/releases)
+- [substreams-sink-sql](https://github.com/streamingfast/substreams-sink-sql/releases)
 
 
 ### Install the toolchain
@@ -51,6 +51,6 @@ rustup target add wasm32-unknown-unknown
 After that, you can use the commands from `Makefile`:
 |Command|Description|
 |----------|---------|
-|`make setup`|Setup the postgres database running the `schema.sql` script|
+|`make setup`|Setup the clickhouse database running the `schema.sql` script|
 |`make build`|Build the substream module using the wasm toolchain|
-|`make sink`|Run the `substreams-postgres-sql` process with your module|
+|`make sink`|Run the `substreams-sink-sql` process with your module|
